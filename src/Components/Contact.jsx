@@ -13,7 +13,7 @@ const Contact = () => {
             Let’s Build Something <br />
             Incredible Together
           </p>
-          <div className="">
+          <div className="text-black">
             <form action="">
               <div className="space-y-5">
                 <input
@@ -35,7 +35,7 @@ const Contact = () => {
                   className="p-3 w-full rounded-md"
                 ></textarea>
                 <div className="">
-                  <button className="bg-blue-700 px-10 py-5 rounded-md ">
+                  <button className="bg-blue-700 text-white px-10 py-5 rounded-md ">
                     Send Message
                   </button>
                 </div>
