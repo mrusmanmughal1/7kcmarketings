@@ -2,8 +2,8 @@ import React from "react";
 import contact from "../assets/contact.svg";
 const Contact = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center gap-10 p-10 md:pt-20 w-[80%] mx-auto">
-      <div className="w-full p-10">
+    <div className="flex flex-col md:flex-row items-center gap-10 md:p-10 md:pt-20 w-[90%] md:w-[80%] mx-auto">
+      <div className="w-full  hidden md:block p-10">
         <img src={contact} alt="" />
       </div>
       <div className="w-full">
