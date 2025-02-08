@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.cdnfonts.com/css/cabinet-grotesk");
+body {
+  background-color: black;
+  font-family: "Cabinet Grotesk", sans-serif;
+  color: white;
+}
+
+.main {
+  background-image: url(./assets/bg.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.stock {
+  -webkit-text-stroke: 0.5px rgb(99, 97, 97);
+  color: transparent;
+  font-size: 8rem;
+}
+.stock:hover {
+  -webkit-text-stroke: 0.5px rgb(0, 238, 255);
+}
+.brand .slick-prev:before,
+.slick-next:before {
+  content: "" !important;
+}
+
+.brand .slick-prev:before {
+  background-image: url("./assets/btn1.png"); /* Path to your previous button image */
+}
+
+.brand .slick-next:before {
+  background-image: url("./assets/btn2.png"); /* Path to your next button image */
+}
+.brand  .slick-prev, .slick-next 
+
+{
+  width: 2rem !important;
+  top: 25% !important;
+} 
+.brand .slick-list{
+width: 80%;
+margin: auto;
+}
+/* animation */
+
+.box {
+  animation: animName 14s linear infinite;
+}
+
+@keyframes animName {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.bluestock {
+  color: transparent;
+
+  font-size: 7.5rem;
+  font-weight: 900;
+  -webkit-text-stroke: 0.5px rgb(75, 75, 75);
+}
+.bluestock:hover {
+  color: rgb(0, 140, 255);
+}
+.slider .slick-slide > div {
+  margin: 0 10px;
+}
+.reviews .slick-slide > div {
+  margin: 1rem;
+}
+
+@media (max-width: 768px) {
+  .bluestock {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    line-height: 4rem;
+  }
+}
